@@ -72,7 +72,7 @@ body, html {
     background-color: #444444;
     background-image: linear-gradient(180deg, #444444 0%, #000000 27%, #000000 100%);
  
-
+    overflow: hidden;
 }
 .icon-grp {
     display: flex;
@@ -82,7 +82,7 @@ body, html {
 
 .icon-grp img{
     width: 80px;
-    padding: 20px;
+    padding: 12px 15px;
 }
 
 #user {
@@ -122,6 +122,7 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    z-index: -100px;
 }
 
 .shows {
@@ -160,6 +161,8 @@ body, html {
     height: 10%;
     width: 100%;
     max-width: 100%;
+    z-index: 100;
+    overflow: hidden;
 }
 
 .player div {
@@ -221,4 +224,16 @@ body, html {
 #iccc {
     width: 30px;
     height: 30px;
+}
+
+.seeall {
+    font-weight: 800;
+    position: relative;
+    left: 93%;
+    bottom: 20px;
+    color: #626262;
+    font-size: smaller;
+}
+#installer {
+    padding-right: 20px;
 }
